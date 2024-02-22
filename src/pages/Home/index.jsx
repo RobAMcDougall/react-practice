@@ -11,7 +11,7 @@ export default function Home() {
       <body className={style}>
         <h1 className={style}>React Exercise</h1>
         <h3 className={style}>CHANGE CSS STYLING WITH ONCLICK EVENT</h3>
-        <ThemeButton style={style} setStyle={setStyle} />
+        <ThemeButton/>
       </body>
     </>
   );
