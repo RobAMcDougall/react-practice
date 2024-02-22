@@ -12,4 +12,4 @@ export const ThemeProvider = ({ children }) => {
     )
 }
 
-export const useAuth = () => useContext(ThemeContext)
+export const useTheme = () => useContext(ThemeContext)
