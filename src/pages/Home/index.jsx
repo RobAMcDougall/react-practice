@@ -8,9 +8,11 @@ export default function Home() {
 
   return (
     <>
-      <h1 className="home">React Exercise</h1>
-      <h3 className={style}>CHANGE CSS STYLING WITH ONCLICK EVENT</h3>
-      <ThemeButton />
+      <body className={style}>
+        <h1 className={style}>React Exercise</h1>
+        <h3 className={style}>CHANGE CSS STYLING WITH ONCLICK EVENT</h3>
+        <ThemeButton style={style} setStyle={setStyle} />
+      </body>
     </>
   );
 }
