@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const Theme = () => {
+export default function Theme() {
 
     const [style, setStyle] = useState("light");
 
@@ -10,9 +10,10 @@ const Theme = () => {
 
 
 
-    return <div>
-        <button type="button" onClick={ handleTheme }>Theme</button>
-    </div>
+    return (
+        <div>
+            <button type="button" onClick={handleTheme}>Theme</button>
+        </div>
+    )
 }
 
-export default Theme;
