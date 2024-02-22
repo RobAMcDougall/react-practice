@@ -2,17 +2,13 @@
     text-align: center;
 }
  
-.home {
-    color: green;
-}
- 
 .light {
-    color: red;
-    background-color: white;
+    color: #624F82;
+    background-color: #F6FDC3;
 }
 .dark {
-    color: lightgreen;
-    background-color: gray;
+    color: #F6FDC3;
+    background-color: #624F82;
 }
  
 button {
