@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
+import { useTheme } from "../../contexts";
 
-export default function ThemeButton({ style, setStyle }) {
+export default function ThemeButton() {
+  const { toggle, setToggle } = useTheme();
+
   function handleTheme() {
-    setStyle(style !== "light" ? "light" : "dark");
+    setToggle(!toggle);
   }
 
   return (

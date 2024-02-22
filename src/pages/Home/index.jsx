@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { useTheme } from "../../contexts";
 import ThemeButton from "../../components/ThemeButton";
 
 export default function Home() {
-  const { setTheme } = useTheme();
-  const [style, setStyle] = useState("light");
+  const { toggle } = useTheme();
+  const style = toggle ? "dark" : "light";
 
   return (
     <>
