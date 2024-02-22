@@ -3,7 +3,7 @@ import React, { useState, useContext, createContext } from "react";
 const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-    const [toggle, setToggle] = useState()
+    const [toggle, setToggle] = useState(false)
 
     return (
         <ThemeContext.Provider value={{ toggle, setToggle}}>
