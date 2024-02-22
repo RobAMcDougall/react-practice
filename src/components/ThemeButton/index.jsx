@@ -1,19 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
-export default function Theme() {
+export default function ThemeButton({ style, setStyle }) {
+  function handleTheme() {
+    setStyle(style !== "light" ? "light" : "dark");
+  }
 
-    const [style, setStyle] = useState("light");
-
-    function handleTheme() {
-        style !== "light" ? setStyle("light") : setStyle("dark");
-    }
-
-
-
-    return (
-        <div>
-            <button type="button" onClick={handleTheme}>Theme</button>
-        </div>
-    )
+  return (
+    <div>
+      <button type="button" onClick={handleTheme}>
+        Theme
+      </button>
+    </div>
+  );
 }
-
